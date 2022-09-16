@@ -1,7 +1,7 @@
 @import "../../index.scss";
 
 .language-card-container {
-  background-color: $grey;
+  background-color: $white;
   border-radius: 0.5rem;
   padding: 1rem;
 
@@ -19,13 +19,13 @@
         margin: 0 1rem;
 
         .name {
-          color: $white;
+          color: $primary;
           font-size: 2rem;
           margin-bottom: 0.25rem;
         }
 
         .type {
-          color: $white;
+          color: $primary;
           font-size: 1.125rem;
         }
       }
@@ -38,10 +38,10 @@
       row-gap: 0.5rem;
 
       .description {
-        color: $white;
+        color: $primary;
 
         &-head {
-          color: $light-black;
+          color: $secondary;
           font-weight: bold;
         }
       }

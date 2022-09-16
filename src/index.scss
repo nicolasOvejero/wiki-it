@@ -1,13 +1,19 @@
-$light-black: rgb(39, 39, 39);
-$grey: rgb(99, 99, 99);
-$white: white;
+$white: #ffffff;
+
+$primary: #132034;
+$primary-light: #3c475e;
+$primary-dark: #00000e;
+
+$secondary: #588ecc;
+$secondary-light: #8cbeff;
+$secondary-dark: #1c619b;
 
 body {
   margin: 0;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $light-black;
+  background-color: $primary;
 }
 
 code {
