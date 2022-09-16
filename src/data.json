@@ -1,0 +1,81 @@
+{
+    "languages": [
+        {
+            "name": "python"
+        },
+        {
+            "name": "c"
+        },
+        {
+            "name": "c++"
+        },
+        {
+            "name": "c#"
+        },
+        {
+            "name": "javascript"
+        },
+        {
+            "name": "java"
+        },
+        {
+            "name": "php"
+        },
+        {
+            "name": "go"
+        },
+        {
+            "name": "swift"
+        },
+        {
+            "name": "objectif C"
+        },
+        {
+            "name": "perl"
+        },
+        {
+            "name": "ruby"
+        },
+        {
+            "name": "scala"
+        },
+        {
+            "name": "kotlin"
+        },
+        {
+            "name": "dart"
+        },
+        {
+            "name": "SQL"
+        },
+        {
+            "name": "HTML"
+        },
+        {
+            "name": "CSS"
+        },
+        {
+            "name": "typescript"
+        }
+    ],
+    "framworks": [
+        {
+            "name": "flutter"
+        },
+        {
+            "name": "angularJS"
+        },
+        {
+            "name": "agnular"
+        },
+        {
+            "name": "laravel"
+        },
+        {
+            "name": "reactJS"
+        },
+        {
+            "name": "react native"
+        }
+    ]
+}

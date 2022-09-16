@@ -1,0 +1,49 @@
+@import "../../index.scss";
+
+.header-container {
+  align-items: center;
+  background-color: $grey;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  width: 100%;
+
+  .logo-container {
+    color: $white;
+    flex: 1 0 0;
+
+    .site-name {
+      font-size: 2rem;
+    }
+  }
+
+  .links-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-container {
+    padding: 0.75rem;
+
+    .logo-container {
+      .site-name {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header-container {
+    padding: 0.5rem;
+
+    .logo-container {
+      .site-name {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
