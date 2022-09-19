@@ -1,16 +1,28 @@
 import './information-card.style.scss';
 
-function InformationCard() {
+type LanguageData = {
+    name: string;
+    image?: string;
+    frameworks?: string[];
+    usage?: string[];
+    devType?: string[];
+}
+
+type cardProps = {
+    languageData: LanguageData;
+}
+
+function InformationCard(props: cardProps) {
     return (
         <div className='language-card-container'>
             <div className='card-header'>
                 <img
                     className='card-logo'
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/600px-Python_logo_01.svg.png"
-                    alt="'language' logo"
+                    src={props.languageData.image}
+                    alt={`${props.languageData.name} logo`}
                 />
                 <div className='card-minimal-info'>
-                    <h2 className='name'>Python</h2>
+                    <h2 className='name'>{ props.languageData.name }</h2>
                 </div>
             </div>
             <div className='card-content'>
@@ -18,21 +30,21 @@ function InformationCard() {
                     Framework(s):
                 </p>
                 <p className='description'>
-                    Flask, Django, CherryPy, Dash, Falcon, Web2py
+                    { props.languageData.frameworks?.join(', ') || '-' }
                 </p>
 
                 <p className='description description-head'>
                     Domaine(s) d'application:
                 </p>
                 <p className='description'>
-                    PaintTest, scripting reseau
+                    { props.languageData.usage?.join(', ') || '-' }
                 </p>
 
                 <p className='description description-head'>
                     Utilisation(s):
                 </p>
                 <p className='description'>
-                    Frontend et Backend
+                    { props.languageData.devType?.join(' et ') || '-' }
                 </p>
             </div>
         </div>

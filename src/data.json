@@ -1,61 +1,198 @@
 {
     "languages": [
         {
-            "name": "python"
+            "name": "python",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/600px-Python_logo_01.svg.png",
+            "frameworks": [ 
+                "Flask", 
+                "Django", 
+                "CherryPy", 
+                "Dash", 
+                "Falcon", 
+                "Web2py"
+            ],
+            "usage": [
+                "PaintTest", 
+                "Scripting réseau"
+            ],
+            "devType": [
+                "frontent",
+                "backend"
+            ]
         },
         {
-            "name": "c"
+            "name": "c",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/1920px-The_C_Programming_Language_logo.svg.png",
+            "frameworks": [ 
+                "Vely"
+            ],
+            "usage": [
+            ],
+            "devType": [
+                "backend"
+            ]
         },
         {
-            "name": "c++"
+            "name": "c++",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/612px-ISO_C%2B%2B_Logo.svg.png",
+            "frameworks": [ 
+                "QT"
+            ],
+            "usage": [
+                "jeux vidéo"
+            ],
+            "devType": [
+                "backend"
+            ]
         },
         {
-            "name": "c#"
+            "name": "c#",
+            "image": "https://www.avenga.com/wp-content/uploads/2020/11/C-Sharp.png",
+            "frameworks": [ 
+                "ASP.NET"
+            ],
+            "usage": [
+                "site internet"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ]
         },
         {
-            "name": "javascript"
+            "name": "javascript",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/262px-Unofficial_JavaScript_logo_2.svg.png",
+            "frameworks": [ 
+                "AngularJS",
+                "Angular",
+                "ReactJs",
+                "VueJs",
+                "EmberJs",
+                "nodeJS",
+                "backboneJS"
+            ],
+            "usage": [
+                "intéraction utilisateur",
+                "API"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ]
         },
         {
-            "name": "java"
+            "name": "java",
+            "image": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/262px-Java_Logo.svg.png",
+            "frameworks": [
+                "spring",
+                "structs",
+                "hibernate",
+                "spark"
+            ],
+            "usage": [
+                "API"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ]
         },
         {
-            "name": "php"
+            "name": "php",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1422px-PHP-logo.svg.png"
         },
         {
-            "name": "go"
+            "name": "go",
+            "image": "https://miro.medium.com/max/1200/1*Ifpd_HtDiK9u6h68SZgNuA.png"
         },
         {
-            "name": "swift"
+            "name": "swift",
+            "image": "https://sdtimes.com/wp-content/uploads/2020/02/0d7ab3b633e07bf8ec99bdc18e22ad89d8934801.png"
         },
         {
-            "name": "objectif C"
+            "name": "perl",
+            "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Perl_language_logo.svg/1920px-Perl_language_logo.svg.png"
         },
         {
-            "name": "perl"
+            "name": "ruby",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/262px-Ruby_logo.svg.png",
+            "frameworks": [
+                "Rails"
+            ],
+            "usage": [
+                "application web",
+                "API"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ]
         },
         {
-            "name": "ruby"
+            "name": "scala",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/242px-Scala-full-color.svg.png"
         },
         {
-            "name": "scala"
+            "name": "kotlin",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kotlin_logo_2021.svg/360px-Kotlin_logo_2021.svg.png",
+            "frameworks": [
+                "Ktor"
+            ],
+            "usage": [
+                "application mobile android",
+                "API"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ]
         },
         {
-            "name": "kotlin"
+            "name": "dart",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dart_programming_language_logo.svg/242px-Dart_programming_language_logo.svg.png",
+            "frameworks": [
+                "flutter"
+            ],
+            "usage": [
+                "application mobile android & apple"
+            ],
+            "devType": [
+                "frontend"
+            ]
         },
         {
-            "name": "dart"
+            "name": "SQL",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
         },
         {
-            "name": "SQL"
+            "name": "HTML",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png",
+            "usage": [
+                "mise en page d'un site"
+            ],
+            "devType": [
+                "frontend"
+            ]
         },
         {
-            "name": "HTML"
+            "name": "CSS",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/240px-CSS3_logo_and_wordmark.svg.png",
+            "frameworks": [
+                "less",
+                "sass",
+                "bootstrap",
+                "tailwind"
+            ],
+            "usage": [
+                "style d'un page"
+            ],
+            "devType": [
+                "frontend"
+            ]
         },
         {
-            "name": "CSS"
-        },
-        {
-            "name": "typescript"
+            "name": "typescript",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/128px-Typescript_logo_2020.svg.png"
         }
     ],
     "framworks": [

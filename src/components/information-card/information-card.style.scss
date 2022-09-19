@@ -3,6 +3,8 @@
 .language-card-container {
   background-color: $white;
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
 
   .card {
@@ -10,9 +12,12 @@
       align-items: center;
       display: flex;
       flex-direction: row;
+      flex: 1 0 0;
 
       .card-logo {
-        width: 7rem;
+        max-height: 7rem;
+        max-width: 7rem;
+        margin-bottom: 1rem;
       }
 
       .card-minimal-info {
@@ -22,6 +27,7 @@
           color: $primary;
           font-size: 2rem;
           margin-bottom: 0.25rem;
+          text-transform: capitalize;
         }
 
         .type {
@@ -39,6 +45,7 @@
 
       .description {
         color: $primary;
+        text-transform: capitalize;
 
         &-head {
           color: $secondary;
