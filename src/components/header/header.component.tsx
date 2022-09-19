@@ -13,8 +13,8 @@ function Header() {
                     <h2 className='site-name'>WIKI-IT</h2>
                 </div>
                 <nav className='links-container'>
-                    <Button text='Languages' clickHandler={() => { navigate('/languages') }} ></Button>
-                    <Button text='Frameworks' clickHandler={() => { }}></Button>
+                    <Button color="ORANGE" text='Languages' clickHandler={() => { navigate('/languages') }} ></Button>
+                    <Button color="BLUE" text='Frameworks' clickHandler={() => { }}></Button>
                 </nav>
             </header>
             <Outlet />

@@ -1,19 +1,24 @@
 $white: #ffffff;
 
-$primary: #132034;
-$primary-light: #3c475e;
-$primary-dark: #00000e;
+$background-darker: #20202a;
+$background-dark: #272936;
 
-$secondary: #588ecc;
-$secondary-light: #8cbeff;
-$secondary-dark: #1c619b;
+$boder-color: #50525d;
+
+$color-1: #f27269;
+$color-2: #706ff2;
+$color-3: #f6c77a;
+
+$text-dark: #50525d;
+$text: #7d7d87;
+$text-light: #c2c2ca;
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Dosis", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $primary;
+  background-color: $background-darker;
 }
 
 code {

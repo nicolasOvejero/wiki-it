@@ -1,11 +1,11 @@
 @import "../../index.scss";
 
 .language-card-container {
-  background-color: $white;
-  border-radius: 0.5rem;
+  background-color: #272936;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.5rem;
 
   .card {
     &-header {
@@ -13,26 +13,26 @@
       display: flex;
       flex-direction: row;
       flex: 1 0 0;
+      margin-bottom: 1rem;
 
-      .card-logo {
-        max-height: 7rem;
-        max-width: 7rem;
-        margin-bottom: 1rem;
-      }
+      .badge {
+        align-items: center;
+        border-radius: 50rem;
+        display: flex;
+        padding: 0.5rem 2rem;
 
-      .card-minimal-info {
-        margin: 0 1rem;
-
-        .name {
-          color: $primary;
-          font-size: 2rem;
-          margin-bottom: 0.25rem;
-          text-transform: capitalize;
+        &.orange {
+          background-color: $color-1;
         }
 
-        .type {
-          color: $primary;
-          font-size: 1.125rem;
+        &.blue {
+          background-color: $color-2;
+        }
+
+        .name {
+          color: $white;
+          font-size: 2rem;
+          text-transform: capitalize;
         }
       }
     }
@@ -44,12 +44,14 @@
       row-gap: 0.5rem;
 
       .description {
-        color: $primary;
+        color: $text;
+        font-size: 1.125rem;
         text-transform: capitalize;
 
         &-head {
-          color: $secondary;
+          color: $text-light;
           font-weight: bold;
+          text-transform: none;
         }
       }
     }
@@ -62,10 +64,6 @@
 
     .card {
       &-header {
-        .card-logo {
-          width: 5rem;
-        }
-
         .card-minimal-info {
           margin: 0 0.5rem;
 
@@ -120,31 +118,30 @@
 
 @media only screen and (max-width: 576px) {
   .language-card-container {
-    padding: 0.5rem;
+    padding: 0.75rem;
 
     .card {
       &-header {
-        .card-logo {
-          width: 4rem;
-        }
+        margin-bottom: 0.5rem;
 
-        .card-minimal-info {
-          margin: 0 0.5rem;
+        .badge {
+          justify-content: center;
+          min-width: 25%;
+          padding: 0.25rem 0.5rem;
 
           .name {
-            font-size: 1.5rem;
-            margin-bottom: 0.125rem;
-          }
-
-          .type {
-            font-size: 1rem;
+            font-size: 1.25rem;
           }
         }
       }
 
       &-content {
-        .description-head:not(:first-child) {
-          margin-top: 0.75rem;
+        column-gap: 0.25rem;
+        grid-template-columns: 1fr;
+        row-gap: 0.25rem;
+
+        .description {
+          font-size: 1rem;
         }
       }
     }

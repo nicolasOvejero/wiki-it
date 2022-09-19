@@ -2,7 +2,8 @@
 
 .header-container {
   align-items: center;
-  background-color: $secondary;
+  background-color: $background-darker;
+  border-bottom: 1px solid $boder-color;
   display: flex;
   flex-direction: row;
   padding: 1rem;

@@ -1,3 +1,4 @@
+import { Colors } from '../button/button.component';
 import './information-card.style.scss';
 
 type LanguageData = {
@@ -9,19 +10,17 @@ type LanguageData = {
 }
 
 type cardProps = {
+    color: Colors;
     languageData: LanguageData;
 }
 
 function InformationCard(props: cardProps) {
+    const color = props.color === 'ORANGE' ? 'orange' : 'blue';
+
     return (
         <div className='language-card-container'>
             <div className='card-header'>
-                <img
-                    className='card-logo'
-                    src={props.languageData.image}
-                    alt={`${props.languageData.name} logo`}
-                />
-                <div className='card-minimal-info'>
+                <div className={`badge ${color}`}>
                     <h2 className='name'>{ props.languageData.name }</h2>
                 </div>
             </div>

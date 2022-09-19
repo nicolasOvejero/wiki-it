@@ -8,7 +8,10 @@ function Languages() {
     return (
         <article className='languages-grid'>
             {
-                languages.map((lang) => <InformationCard languageData={lang}></InformationCard>)
+                languages.map((lang) => <InformationCard
+                    color="ORANGE"
+                    languageData={lang}
+                ></InformationCard>)
             }
         </article>
     );
