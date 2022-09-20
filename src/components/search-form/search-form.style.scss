@@ -1,0 +1,72 @@
+@import "../../index.scss";
+
+.search {
+    &-form {
+        display: flex;
+        flex-direction: row;
+        margin: {
+            left: 1.25rem;
+            top: 1.25rem;
+        }
+    }
+
+    &-input {
+        background-color: transparent;
+        border: 1px solid $boder-color;
+        border-radius: 50rem;
+        color: $text;
+        margin-right: 0.5rem;
+        padding: 0.5rem 1rem;
+        width: calc(33.33% - 1.25rem);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .search {
+        &-form {
+            margin: {
+                left: 1rem;
+                top: 1rem;
+            }
+        }
+
+        &-input {
+            margin-right: 0.25rem;
+            width: calc(50% - 1rem);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .search {
+        &-form {
+            margin: {
+                left: 0.75rem;
+                top: 0.75rem;
+            }
+        }
+
+        &-input {
+            margin-right: 0.25rem;
+            width: calc(50% - 0.75rem);
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .search {
+        &-form {
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem;
+        }
+
+        &-input {
+            margin: {
+                bottom: 0.5rem;
+                right: 0;
+            }
+            width: 100%;
+        }
+    }
+}

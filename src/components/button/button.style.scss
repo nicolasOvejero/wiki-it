@@ -22,6 +22,12 @@
     color: $white;
     border: 1px solid $color-2;
   }
+
+  &.yellow {
+    background-color: $color-3;
+    color: $text-dark;
+    border: 1px solid $color-3;
+  }
 }
 
 @media only screen and (max-width: 768px) {
