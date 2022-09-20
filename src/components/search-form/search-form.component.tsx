@@ -5,6 +5,7 @@ import './search-form.style.scss';
 type SearchFormProps = {
     inputPlaceholder: string;
     submitHandler: (value: string) => void;
+    buttontext?: string;
 }
 
 function SearchForm(props: SearchFormProps) {
@@ -24,7 +25,7 @@ function SearchForm(props: SearchFormProps) {
                 name="search-input"
                 placeholder={props.inputPlaceholder}
             />
-            <Button text="Rechercher" color="YELLOW" type="submit"></Button>
+            <Button text={ props.buttontext || "Rechercher" }  color="YELLOW" type="submit"></Button>
         </form>
     );
 }

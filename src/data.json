@@ -729,5 +729,75 @@
                 "Flexibilité"
             ]
         }
+    ],
+    "definitions": [
+        {
+            "name": "JSON",
+            "definitions": "(JavaScript Object Notation) Format de d'échange données entre API et Frontend"
+        },
+        {
+            "name": "API",
+            "definitions": "(Application Programming Interface) interface mise à disposition pour que le Frontend pour intéragir avec le backend"
+        },
+        {
+            "name": "BDD / DB",
+            "definitions": "(Base de données / Database) Stockage et gestion des informations",
+            "extra": "Il en existe de plusieurs type : Reltionnelle, Non Relationnelle"
+        },
+        {
+            "name": "SEO",
+            "definitions": "(Search engine optimization) Gestion du référencement sur internet.",
+            "extra": "Plus le score SEO d'un site est élevé, mieux le site sera référencé sur les moteurs de recherche"
+        },
+        {
+            "name": "CI/CD", 
+            "definitions": "(Continuous integration/Continuous distribution) Ensemble de concepts pour avoir une intégration et une distribution de code en continu",
+            "extra": "L'ensemble est automatisé et sous la surveillance des DevOps"
+        },
+        {
+            "name": "SOAP", 
+            "definitions": "(Simple Object Access Protocol) Format de d'échange données entre API et Frontend",
+            "extra": "La structure resemble beacoup à celle du XML"
+        },
+        {
+            "name": "CMS", 
+            "definitions": "(Content Management System) Outils qui permet de concevoir un site web rapidement pour tout le monde",
+            "extra": "Exemple : Joomla!, Wordpress"
+        },
+        {
+            "name": "UI", 
+            "definitions": "(User Interface) Métier qui design et mets en page un site internet"
+        },
+        {
+            "name": "UX", 
+            "definitions": "(User Experience) Métier qui travail l'experience utilisateur sur un site web"
+        },
+        {
+            "name": "AWS", 
+            "definitions": "(Amazon Web Services) Ensemble de solutions proposées par Amazon pour mettre en place un site web",
+            "extra": "Exemple: Stockage de données (S3), Gestion de DNS (Route 53)"
+        },
+        {
+            "name": "PWA",
+            "definitions": "(Progressive Web Apps) Méthode de développement d'un site web pour que l'utilisateur voit le site comme une application mobile"
+        },
+        {
+            "name": "SPA",
+            "definitions": "(Single-page application) Méthode de développement d'un site web qui consiste à avoir un page unique.",
+            "extra": "Des componsants sont chargés dynamiquement pour éviter le chargement (ex: Angular, ReactJs, VueJs)"
+        },
+        {
+            "name": "Git",
+            "definitions": "Outils qui permet la sauvegarde du code de plus le travail de groupe est facilité.",
+            "extra": "Un système de version est compris dans GIT"
+        },
+        {
+            "name": "REST",
+            "definitions": "(Representational State Transfer) Méthode de développement et de contraintes pour la mise en place des services backend"
+        },
+        {
+            "name": "JUnit",
+            "definitions": "Librairie utilisée pour faire des tests en Java"
+        }
     ]
 }

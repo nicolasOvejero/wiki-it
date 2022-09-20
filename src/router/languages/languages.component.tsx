@@ -23,6 +23,12 @@ class Languages extends Component {
         };
      } 
 
+    /*
+    * Function to handle the click on the submit buttton
+    * It takes the value put in the input filter and 
+    * with it, it filters the languages.
+    * At the end the state is update with the filtered values.
+    */
     searchFormHandler = (value: string) => {
         const filteredValues = (this.state as StateModel).languages
             .filter((item) => item.name.toLowerCase().includes(value) ||
