@@ -12,7 +12,6 @@
       align-items: center;
       display: flex;
       flex-direction: row;
-      flex: 1 0 0;
       margin-bottom: 1rem;
 
       .badge {
@@ -42,6 +41,7 @@
       column-gap: 0.5rem;
       grid-template-columns: 1fr 2fr;
       row-gap: 0.5rem;
+      flex: 1 0 0;
 
       .description {
         color: $text;

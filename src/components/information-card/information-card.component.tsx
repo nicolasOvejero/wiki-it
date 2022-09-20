@@ -7,7 +7,8 @@ type LanguageData = {
     frameworks?: string[];
     usage?: string[];
     devType?: string[];
-    advantageDisavantage?: string[];
+    advantage?: string[];
+    disavantage?: string[];
 }
 
 type cardProps = {
@@ -48,10 +49,17 @@ function InformationCard(props: cardProps) {
                 </p>
 
                 <p className='description description-head'>
-                    Point fort<br />Point faible:
+                    Point(s) fort:
                 </p>
                 <p className='description'>
-                    { props.languageData.advantageDisavantage?.join(' et ') || '-' }
+                    { props.languageData.advantage?.join(', ') || '-' }
+                </p>
+
+                <p className='description description-head'>
+                    Point(s) faible:
+                </p>
+                <p className='description'>
+                    { props.languageData.disavantage?.join(', ') || '-' }
                 </p>
             </div>
         </div>

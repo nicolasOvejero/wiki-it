@@ -1,6 +1,74 @@
 {
     "languages": [
         {
+            "name": "c",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/1920px-The_C_Programming_Language_logo.svg.png",
+            "frameworks": [ 
+                "Vely"
+            ],
+            "usage": [
+                "Système embarqué",
+                "Programme"
+            ],
+            "devType": [
+                "backend"
+            ],
+            "advantage": [
+                "Robuste",
+                "Structuré"
+            ],
+            "disavantage": [
+                "Pas d'objets"
+            ]
+        },
+        {
+            "name": "c++",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/612px-ISO_C%2B%2B_Logo.svg.png",
+            "frameworks": [ 
+                "QT"
+            ],
+            "usage": [
+                "jeux vidéo",
+                "Système embarqué",
+                "Programme",
+                "Machine learning"
+            ],
+            "devType": [
+                "backend"
+            ],
+            "advantage": [
+                "Orienté objets",
+                "Gestion mémoire",
+                "Langage bas niveau"
+            ],
+            "disavantage": [
+                "Utilisation des pointeurs",
+                "Problème de sécurité"
+            ]
+        },
+        {
+            "name": "c#",
+            "image": "https://www.avenga.com/wp-content/uploads/2020/11/C-Sharp.png",
+            "frameworks": [ 
+                "ASP.NET"
+            ],
+            "usage": [
+                "Programme sur Windows",
+                "Site internet"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ],
+            "advantage": [
+                "Orienté objets",
+                "Rétrocompatibilité"
+            ],
+            "disavantage": [
+                "Optimisation de compilation"
+            ]
+        },
+        {
             "name": "python",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/600px-Python_logo_01.svg.png",
             "frameworks": [ 
@@ -12,51 +80,24 @@
                 "Web2py"
             ],
             "usage": [
-                "PaintTest", 
-                "Scripting réseau"
+                "IA",
+                "data analytics",
+                "applications", 
+                "data analytics", 
+                "site web"
             ],
             "devType": [
                 "frontent",
                 "backend"
-            ]
-        },
-        {
-            "name": "c",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/1920px-The_C_Programming_Language_logo.svg.png",
-            "frameworks": [ 
-                "Vely"
             ],
-            "usage": [
+            "advantage": [
+                "Language haut niveau",
+                "Utilisation facile",
+                "Syntaxe facile"
             ],
-            "devType": [
-                "backend"
-            ]
-        },
-        {
-            "name": "c++",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/612px-ISO_C%2B%2B_Logo.svg.png",
-            "frameworks": [ 
-                "QT"
-            ],
-            "usage": [
-                "jeux vidéo"
-            ],
-            "devType": [
-                "backend"
-            ]
-        },
-        {
-            "name": "c#",
-            "image": "https://www.avenga.com/wp-content/uploads/2020/11/C-Sharp.png",
-            "frameworks": [ 
-                "ASP.NET"
-            ],
-            "usage": [
-                "site internet"
-            ],
-            "devType": [
-                "frontend",
-                "backend"
+            "disavantage": [
+                "execution lente",
+                "besoin de beaucoup de mémoire"
             ]
         },
         {
@@ -78,16 +119,190 @@
             "devType": [
                 "frontend",
                 "backend"
+            ],
+            "advantage": [
+                "Rapide",
+                "documentation",
+                "mise à jour fréquente"
+            ],
+            "disavantage": [
+                "Support sur navigateur"
             ]
         },
         {
             "name": "java",
             "image": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/262px-Java_Logo.svg.png",
             "frameworks": [
-                "spring",
-                "structs",
+                "springboot",
                 "hibernate",
-                "spark"
+                "structs",
+                "spark",
+                "play"
+            ],
+            "usage": [
+                "API",
+                "application",
+                "site web"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ],
+            "advantage": [
+                "Orienté object",
+                "facile à maintenir",
+                "Langage haut niveau"
+            ],
+            "disavantage": [
+                "besoin de beaucoup de mémoire",
+                "language lent"
+            ]
+        },
+        {
+            "name": "php",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1422px-PHP-logo.svg.png",
+            "frameworks": [
+                "Laravel",
+                "Symfony",
+                "Zend",
+                "CakePHP"
+            ],
+            "usage": [
+                "site web"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ],
+            "advantage": [
+                "Chargement rapide",
+                "language stable",
+                "documentation"
+            ],
+            "disavantage": [
+                "sécurité",
+                "performance sur grosse application"
+            ]
+        },
+        {
+            "name": "go",
+            "image": "https://miro.medium.com/max/1200/1*Ifpd_HtDiK9u6h68SZgNuA.png",
+            "frameworks": [
+                "Gin",
+                "Fiber",
+                "Echo",
+                "Iris",
+                "beego"
+            ],
+            "usage": [
+                "application web",
+                "scripting",
+                "serveur"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ],
+            "advantage": [
+                "Portabilité",
+                "Léger",
+                "Gestion mémoire"
+            ],
+            "disavantage": [
+                "Non orienté object"
+            ]
+        },
+        {
+            "name": "swift",
+            "image": "https://sdtimes.com/wp-content/uploads/2020/02/0d7ab3b633e07bf8ec99bdc18e22ad89d8934801.png",
+            "frameworks": [
+                "Quick",
+                "Vapor",
+                "SwiftMonkey",
+                "Kitura",
+                "SwiftyFORM",
+                "SwiftShell"
+            ],
+            "usage": [
+                "application mobile apple"
+            ],
+            "devType": [
+                "frontend"
+            ],
+            "advantage": [
+                "Open source",
+                "Focus sur la sécurité",
+                "developpement rapide"
+            ],
+            "disavantage": [
+                "Support pour anciennes vesions",
+                "petite communauté"
+            ]
+        },
+        {
+            "name": "perl",
+            "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Perl_language_logo.svg/1920px-Perl_language_logo.svg.png",
+            "frameworks": [
+                "Catalyst",
+                "Dancer",
+                "Mojolicious",
+                "Moose"
+            ],
+            "usage": [
+                "tache automatisé",
+                "scripting"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ],
+            "advantage": [
+                "Orienté object"
+            ],
+            "disavantage": [
+                "apprentissage",
+                "lent"
+            ]
+        },
+        {
+            "name": "ruby",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/262px-Ruby_logo.svg.png",
+            "frameworks": [
+                "Rails",
+                "Sinatra",
+                "Roda",
+                "Goliath",
+                "Camping"
+            ],
+            "usage": [
+                "application web",
+                "API",
+                "Programme",
+                "automatisation"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ],
+            "advantage": [
+                "Open source",
+                "Facile à prendre en main",
+                "Syntaxe facile"
+            ],
+            "disavantage": [
+                "debug difficile",
+                "lent"
+            ]
+        },
+        {
+            "name": "scala",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/242px-Scala-full-color.svg.png",
+            "frameworks": [
+                "Akka",
+                "Apache Spark",
+                "Play",
+                "Scala Slick",
+                "Monix"
             ],
             "usage": [
                 "API"
@@ -95,56 +310,42 @@
             "devType": [
                 "frontend",
                 "backend"
+            ],
+            "advantage": [
+                "Orienté object",
+                "Language haut niveau"
+            ],
+            "disavantage": [
+                "Non optimisé",
+                "Pas beaucoup de developpeurs"
             ]
         },
         {
-            "name": "php",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1422px-PHP-logo.svg.png"
-        },
-        {
-            "name": "go",
-            "image": "https://miro.medium.com/max/1200/1*Ifpd_HtDiK9u6h68SZgNuA.png"
-        },
-        {
-            "name": "swift",
-            "image": "https://sdtimes.com/wp-content/uploads/2020/02/0d7ab3b633e07bf8ec99bdc18e22ad89d8934801.png"
-        },
-        {
-            "name": "perl",
-            "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Perl_language_logo.svg/1920px-Perl_language_logo.svg.png"
-        },
-        {
-            "name": "ruby",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/262px-Ruby_logo.svg.png",
+            "name": "kotlin",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kotlin_logo_2021.svg/360px-Kotlin_logo_2021.svg.png",
             "frameworks": [
-                "Rails"
+                "Ktor",
+                "Javalin",
+                "Spark",
+                "Spring Boot",
+                "Vert.x"
             ],
             "usage": [
+                "application mobile android",
                 "application web",
                 "API"
             ],
             "devType": [
                 "frontend",
                 "backend"
-            ]
-        },
-        {
-            "name": "scala",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/242px-Scala-full-color.svg.png"
-        },
-        {
-            "name": "kotlin",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kotlin_logo_2021.svg/360px-Kotlin_logo_2021.svg.png",
-            "frameworks": [
-                "Ktor"
             ],
-            "usage": [
-                "application mobile android",
-                "API"
+            "advantage": [
+                "Facile à prendre en main",
+                "facile à maintenir",
+                "cohabitation avec Java"
             ],
-            "devType": [
-                "frontend",
-                "backend"
+            "disavantage": [
+                "compilation lente"
             ]
         },
         {
@@ -154,15 +355,39 @@
                 "flutter"
             ],
             "usage": [
-                "application mobile android & apple"
+                "application mobile android & apple",
+                "site web"
             ],
             "devType": [
                 "frontend"
+            ],
+            "advantage": [
+                "Facile à prendre en main",
+                "Orienté object",
+                "bonnes performance"
+            ],
+            "disavantage": [
+                "Documentation",
+                "Encore en cours de developpement"
             ]
         },
         {
             "name": "SQL",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+            "usage": [
+                "gestion de base de données"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ],
+            "advantage": [
+                "Structuré",
+                "Optimisé"
+            ],
+            "disavantage": [
+                "Flexibilité"
+            ]
         },
         {
             "name": "HTML",
@@ -172,6 +397,15 @@
             ],
             "devType": [
                 "frontend"
+            ],
+            "advantage": [
+                "Rapide à charger",
+                "Léger",
+                "fonctionne sur tout les navigateurs"
+            ],
+            "disavantage": [
+                "Pas de gestion erreurs",
+                "beaucoup de code pour un page simple"
             ]
         },
         {
@@ -188,11 +422,57 @@
             ],
             "devType": [
                 "frontend"
+            ],
+            "advantage": [
+                "Simplifaction de la maintenance des sites",
+                "Permet la responsivité"
+            ],
+            "disavantage": [
+                "Compatibilité entre tous les navigateurs"
             ]
         },
         {
             "name": "typescript",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/128px-Typescript_logo_2020.svg.png"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/128px-Typescript_logo_2020.svg.png",
+            "frameworks": [
+                "Quick",
+                "Vapor",
+                "SwiftMonkey",
+                "Kitura",
+                "SwiftyFORM",
+                "SwiftShell"
+            ],
+            "usage": [
+                "site web",
+                "API"
+            ],
+            "devType": [
+                "frontend",
+                "backend"
+            ],
+            "advantage": [
+                "documentation",
+                "communauté"
+            ],
+            "disavantage": [
+                "Besoin d'une compilation"
+            ]
+        },
+        {
+            "name": "cobol",
+            "usage": [
+                "Banque"
+            ],
+            "devType": [
+                "backend"
+            ],
+            "advantage": [
+                "Gestion de données de masse"
+            ],
+            "disavantage": [
+                "Vieux language",
+                "Peu developpeurs"
+            ]
         }
     ],
     "framworks": [
