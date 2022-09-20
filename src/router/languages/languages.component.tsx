@@ -3,19 +3,11 @@ import './languages.style.scss';
 import dataJson from '../../data.json';
 import { Component, Fragment } from 'react';
 import SearchForm from '../../components/search-form/search-form.component';
-
-type Language = {
-    name: string;
-    image?: string;
-    frameworks?: string[];
-    usage?: string[];
-    devType?: string[];
-    advantageDisavantage?: string[];
-}
+import { LanguageData } from '../../common/models/common-models.component';
 
 type StateModel = {
-    languages: Language[],
-    searchResults: Language[]
+    languages: LanguageData[],
+    searchResults: LanguageData[]
 }
 
 class Languages extends Component {
@@ -53,6 +45,7 @@ class Languages extends Component {
                             key={lang.name}
                             color="ORANGE"
                             languageData={lang}
+                            cardtype="language"
                         ></InformationCard>)
                     }
                 </article>

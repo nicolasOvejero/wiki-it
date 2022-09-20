@@ -1,19 +1,13 @@
+import { Fragment } from 'react';
+import { LanguageData } from '../../common/models/common-models.component';
 import { Colors } from '../button/button.component';
+import InformationCardDescription from '../information-card-description/information-card-description.component';
 import './information-card.style.scss';
-
-type LanguageData = {
-    name: string;
-    image?: string;
-    frameworks?: string[];
-    usage?: string[];
-    devType?: string[];
-    advantage?: string[];
-    disavantage?: string[];
-}
 
 type cardProps = {
     color: Colors;
     languageData: LanguageData;
+    cardtype?: "language" | "frameworks";
 }
 
 function InformationCard(props: cardProps) {
@@ -27,40 +21,39 @@ function InformationCard(props: cardProps) {
                 </div>
             </div>
             <div className='card-content'>
-                <p className='description description-head'>
-                    Framework(s):
-                </p>
-                <p className='description'>
-                    { props.languageData.frameworks?.join(', ') || '-' }
-                </p>
+                {
+                    props.cardtype === "frameworks" ? (
+                        <InformationCardDescription
+                            head="Langage(s)"
+                            value={ props.languageData.languages?.join(', ') }
+                        ></InformationCardDescription>
+                    ) : (
+                        <InformationCardDescription
+                            head="Framework(s)"
+                            value={ props.languageData.frameworks?.join(', ') }
+                        ></InformationCardDescription>
+                    )
+                }
 
-                <p className='description description-head'>
-                    Domaine(s) d'application:
-                </p>
-                <p className='description'>
-                    { props.languageData.usage?.join(', ') || '-' }
-                </p>
+                <InformationCardDescription
+                    head="Domaine(s) d'application"
+                    value={ props.languageData.usage?.join(', ') }
+                ></InformationCardDescription>
 
-                <p className='description description-head'>
-                    Utilisation(s):
-                </p>
-                <p className='description'>
-                    { props.languageData.devType?.join(' et ') || '-' }
-                </p>
+                <InformationCardDescription
+                    head="Utilisation(s)"
+                    value={ props.languageData.devType?.join(', ') }
+                ></InformationCardDescription>
 
-                <p className='description description-head'>
-                    Point(s) fort:
-                </p>
-                <p className='description'>
-                    { props.languageData.advantage?.join(', ') || '-' }
-                </p>
+                <InformationCardDescription
+                    head="Point(s) fort"
+                    value={ props.languageData.advantage?.join(', ') }
+                ></InformationCardDescription>
 
-                <p className='description description-head'>
-                    Point(s) faible:
-                </p>
-                <p className='description'>
-                    { props.languageData.disavantage?.join(', ') || '-' }
-                </p>
+                <InformationCardDescription
+                    head="Point(s) faible"
+                    value={ props.languageData.disavantage?.join(', ') }
+                ></InformationCardDescription>
             </div>
         </div>
     );
