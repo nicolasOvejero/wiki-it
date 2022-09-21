@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import { LanguageData } from '../../common/models/common-models.component';
 import { Colors } from '../button/button.component';
 import InformationCardDescription from '../information-card-description/information-card-description.component';

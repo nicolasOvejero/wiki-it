@@ -13,6 +13,10 @@
     color: $white;
     flex: 1 0 0;
 
+    .icon-menu {
+      display: none;
+    }
+
     .site-name {
       font-size: 2rem;
     }
@@ -42,9 +46,22 @@
     padding: 0.5rem;
 
     .logo-container {
+      display: flex;
+      flex-direction: row;
+
+      .icon-menu {
+        display: block;
+        font-size: 1.5rem;
+      }
+  
       .site-name {
         font-size: 1.25rem;
+        margin-left: 0.5rem
       }
+    }
+
+    .links-container {
+      display: none;
     }
   }
 }

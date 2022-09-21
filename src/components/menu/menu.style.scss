@@ -1,0 +1,59 @@
+@import "../../index.scss";
+
+.menu {
+  display: none;
+  transition: all 1s ease-in-out;
+  width: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .menu {
+    background-color: $background-darker;
+    color: $text-light;
+    display: block;
+    height: 100vh;
+    left: -100vh;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    width: 100vw;  
+
+    &.open {
+      left: 0;
+    }
+
+    .name {
+      border-bottom: 1px solid $boder-color;
+      font-size: 3rem;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .close { 
+      font-size: 2rem;
+    }
+    
+    &-items {
+      list-style-type: none;
+    }
+
+    &-item {
+      font-size: 1.5rem;
+      padding: 1rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $boder-color;
+      }
+
+      &.orange a {
+        color: $color-1;
+        padding: 1rem;
+      }
+    
+      &.blue a {
+        color: $color-2;
+        padding: 1rem;
+      }
+   }
+  }
+}
