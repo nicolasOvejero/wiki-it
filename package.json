@@ -2,7 +2,7 @@
   "name": "wiki-it",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nicolasovejero.github.io/",
+  "homepage": "https://nicolasovejero.github.io/wiki-it/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.14.1",
