@@ -20,6 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "coverage": "yarn test --coverage --watchAll=false",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -51,5 +52,13 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react-redux": "^7.1.24",
     "@types/redux": "^3.6.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.ts*",
+      "src/router/**/*.ts*",
+      "src/store/menu/**/*.ts*",
+      "src/App.tsx"
+    ]
   }
 }

@@ -13,7 +13,7 @@ function Menu() {
     });
 
     return (
-        <nav className={`menu ${menu.isOpen ? 'open' : null}`}>
+        <nav className={`menu ${menu.isOpen ? 'open' : ''}`}>
             <span
                 className="close material-symbols-outlined"
                 onClick={toggleMenu}
