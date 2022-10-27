@@ -1,7 +1,7 @@
-@import "../../index.scss";
+@import "../../common/common.scss";
 
 .language-card-container {
-  background-color: #272936;
+  background-color: $background-dark;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -42,18 +42,6 @@
       grid-template-columns: 1fr 2fr;
       row-gap: 0.5rem;
       flex: 1 0 0;
-
-      .description {
-        color: $text;
-        font-size: 1.125rem;
-        text-transform: capitalize;
-
-        &-head {
-          color: $text-light;
-          font-weight: bold;
-          text-transform: none;
-        }
-      }
     }
   }
 }
@@ -107,10 +95,6 @@
       &-content {
         grid-template-columns: 1fr;
         row-gap: 0rem;
-
-        .description-head:not(:first-child) {
-          margin-top: 0.5rem;
-        }
       }
     }
   }
@@ -139,10 +123,6 @@
         column-gap: 0.25rem;
         grid-template-columns: 1fr;
         row-gap: 0.25rem;
-
-        .description {
-          font-size: 1rem;
-        }
       }
     }
   }

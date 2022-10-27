@@ -1,17 +1,4 @@
-$white: #ffffff;
-
-$background-darker: #20202a;
-$background-dark: #272936;
-
-$boder-color: #50525d;
-
-$color-1: #f27269;
-$color-2: #706ff2;
-$color-3: #f6c77a;
-
-$text-dark: #50525d;
-$text: #7d7d87;
-$text-light: #c2c2ca;
+@import "common/common.scss";
 
 body {
   margin: 0;
@@ -19,6 +6,119 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $background-darker;
+
+  &.light {
+    background-color: $tlight-background-darker;
+
+    .header-container {
+      background-color: $tlight-background-darker;
+      border-bottom: 1px solid $tlight-boder-color;
+
+      .logo-container {
+        color: $tlight-text-dark;
+      }
+    }
+
+    .button {
+      &.orange {
+        background-color: $tlight-color-1;
+        color: $tlight-white;
+        border: 1px solid $tlight-color-1;
+      }
+
+      &.blue {
+        background-color: $tlight-color-2;
+        color: $tlight-white;
+        border: 1px solid $tlight-color-2;
+      }
+
+      &.yellow {
+        background-color: $tlight-color-3;
+        color: $tlight-text-dark;
+        border: 1px solid $tlight-color-3;
+      }
+    }
+
+    .language-card-container {
+      background-color: $tlight-background-dark;
+
+      .card-header .badge {
+        &.orange {
+          background-color: $tlight-color-1;
+        }
+
+        &.blue {
+          background-color: $tlight-color-2;
+        }
+
+        .name {
+          color: $tlight-white;
+        }
+      }
+    }
+
+    .description {
+      color: $tlight-text;
+
+      &-head {
+        color: $tlight-text-light;
+      }
+    }
+
+    .search-input {
+      border: 1px solid $tlight-boder-color;
+      color: $tlight-text;
+    }
+
+    .home {
+      &-title {
+        color: $tlight-text;
+      }
+
+      &-list {
+        &-item {
+          border-bottom: 1px solid $tlight-boder-color;
+        }
+
+        &-head {
+          color: $tlight-text;
+        }
+
+        &-body {
+          color: $tlight-text-light;
+        }
+      }
+    }
+
+    a {
+      color: $tlight-text;
+    }
+
+    @media only screen and (max-width: 576px) {
+      .menu {
+        background-color: $tlight-background-darker;
+        color: $tlight-text-light;
+
+        .name {
+          border-bottom: 1px solid $tlight-boder-color;
+        }
+
+        &-item {
+          &:not(:last-child) {
+            border-bottom: 1px solid $tlight-boder-color;
+          }
+
+          &.orange a {
+            color: $tlight-color-1;
+          }
+
+          &.blue a {
+            color: $tlight-color-2;
+          }
+        }
+      }
+    }
+  }
 }
 
 code {
