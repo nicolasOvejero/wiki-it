@@ -23,10 +23,10 @@ function Menu() {
             <h2 className='name'>WIKI-IT</h2>
             <ul className='menu-items'>
                 <li className='menu-item orange'>
-                    <Link to="/languages">Languages</Link>
+                    <Link to="/languages" onClick={toggleMenu}>Languages</Link>
                 </li>
                 <li className='menu-item blue'>
-                    <Link to="/frameworks">Frameworks</Link>
+                    <Link to="/frameworks" onClick={toggleMenu}>Frameworks</Link>
                 </li>
             </ul>
         </nav>
