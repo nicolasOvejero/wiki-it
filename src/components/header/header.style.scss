@@ -26,6 +26,10 @@
     align-items: center;
     display: flex;
     flex-direction: row;
+
+    label {
+      margin-right: 1rem;
+    }
   }
 }
 

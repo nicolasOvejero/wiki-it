@@ -4,9 +4,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import reduxStore from './store/store'; 
+import reduxStore, { persistor } from './store/store'; 
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import './index.scss';
+import { PersistGate } from 'redux-persist/integration/react';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -14,9 +15,11 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <Provider store={reduxStore} >
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
-                <App />
-            </BrowserRouter>
+            <PersistGate persistor={persistor}>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
+                    <App />
+                </BrowserRouter>
+            </PersistGate>
         </Provider>
     </React.StrictMode>
 );

@@ -1,0 +1,96 @@
+@import "../../common/common.scss";
+
+.switch {
+  display: inline-block;
+  height: 2rem;
+  position: relative;
+  width: 5rem;
+
+  input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+
+  .slider {
+    background-color: $text;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+
+    &:before {
+      background: $background-dark url('/assets/moon.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      bottom: 0;
+      box-shadow: 0 0px 4px 1px darken($tlight-boder-color, 20);
+      content: "";
+      height: 2rem;
+      left: 0px;
+      margin: auto 0;
+      padding: 0.2rem;
+      position: absolute;
+      top: 0;
+      transition: 0.4s;
+      -webkit-transition: 0.4s;
+      width: 2rem;
+    }
+
+    &.round {
+      border-radius: 5rem;
+
+      &:before {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  input {
+    &:checked + .slider {
+      background-color: $tlight-background-dark;
+
+      &:before {
+        background: $tlight-white url('/assets/sun.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 0px 4px 1px $tlight-boder-color;
+        transform: translateX(3rem);
+        -webkit-transform: translateX(3rem);
+        -ms-transform: translateX(3rem);
+      }
+    }
+
+    &:focus + .slider {
+      box-shadow: 0 0 1px $tlight-color-2;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .switch {
+    height: 1.5rem;
+    width: 4rem;
+
+    .slider {
+      &:before {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+
+    input {
+      &:checked+.slider {
+        &:before {
+          transform: translateX(3rem);
+          -webkit-transform: translateX(3rem);
+          -ms-transform: translateX(3rem);
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { selectMenuReducer } from '../../store/menu/menu.selector';
 import { MENU_ACTION_TYPES } from '../../store/menu/menu.types';
+import ThemeSwitch from '../theme-switch/theme-switch.component';
 import './menu.style.scss';
 
 function Menu() {
@@ -27,6 +28,9 @@ function Menu() {
                 </li>
                 <li className='menu-item blue'>
                     <Link to="/frameworks" onClick={toggleMenu}>Frameworks</Link>
+                </li>
+                <li className='menu-item theme'>
+                    <span>Theme :</span><ThemeSwitch />
                 </li>
             </ul>
         </nav>
