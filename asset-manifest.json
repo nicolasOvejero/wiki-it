@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wiki-it/static/css/main.460e6c7e.css",
-    "main.js": "/wiki-it/static/js/main.c71b350f.js",
+    "main.css": "/wiki-it/static/css/main.e693e66b.css",
+    "main.js": "/wiki-it/static/js/main.d9b74170.js",
     "static/js/496.3df0ac47.chunk.js": "/wiki-it/static/js/496.3df0ac47.chunk.js",
     "static/media/home-back.jpg": "/wiki-it/static/media/home-back.d83c207caefa3ad42f1d.jpg",
     "service-worker.js": "/wiki-it/service-worker.js",
     "index.html": "/wiki-it/index.html",
     "static/media/sun.svg": "/wiki-it/static/media/sun.aab907de8b2b53dd8522.svg",
     "static/media/moon.svg": "/wiki-it/static/media/moon.6dd1b9a544c4fc3b7de6.svg",
-    "main.460e6c7e.css.map": "/wiki-it/static/css/main.460e6c7e.css.map",
-    "main.c71b350f.js.map": "/wiki-it/static/js/main.c71b350f.js.map",
+    "main.e693e66b.css.map": "/wiki-it/static/css/main.e693e66b.css.map",
+    "main.d9b74170.js.map": "/wiki-it/static/js/main.d9b74170.js.map",
     "496.3df0ac47.chunk.js.map": "/wiki-it/static/js/496.3df0ac47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.460e6c7e.css",
-    "static/js/main.c71b350f.js"
+    "static/css/main.e693e66b.css",
+    "static/js/main.d9b74170.js"
   ]
 }
