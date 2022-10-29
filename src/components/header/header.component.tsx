@@ -7,7 +7,7 @@ import Menu from '../menu/menu.component';
 import ThemeSwitch from '../theme-switch/theme-switch.component';
 import './header.style.scss';
 
-function Header() {
+const Header: React.FC = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
@@ -31,6 +31,7 @@ function Header() {
                     <ThemeSwitch />
                     <Button color='ORANGE' text='Languages' clickHandler={() => { navigate('/languages') }} ></Button>
                     <Button color='BLUE' text='Frameworks' clickHandler={() => { navigate('/frameworks') }}></Button>
+                    <Button color='GREEN' text='Stacks' clickHandler={() => { navigate('/stacks') }}></Button>
                 </nav>
             </header>
             <Menu />

@@ -1,19 +1,19 @@
-import { LanguageData } from '../../common/models/common-models.component';
+import { FrameworkData, LanguageData } from '../../common/models/common-models.component';
 import { Colors } from '../button/button.component';
 import InformationCardDescription from '../information-card-description/information-card-description.component';
-import './information-card.style.scss';
+import '../../common/card.component.scss';
 
-type cardProps = {
+type CardProps = {
     color: Colors;
-    languageData: LanguageData;
+    languageData: LanguageData | FrameworkData;
     cardtype?: "language" | "frameworks";
 }
 
-function InformationCard(props: cardProps) {
+const InformationCard: React.FC<CardProps> = (props: CardProps) => {
     const color = props.color === 'ORANGE' ? 'orange' : 'blue';
 
     return (
-        <div className='language-card-container'>
+        <div className='card-container'>
             <div className='card-header'>
                 <div className={`badge ${color}`}>
                     <h2 className='name'>{ props.languageData.name }</h2>
@@ -24,12 +24,12 @@ function InformationCard(props: cardProps) {
                     props.cardtype === "frameworks" ? (
                         <InformationCardDescription
                             head="Langage(s)"
-                            value={ props.languageData.languages?.join(', ') }
+                            value={ (props.languageData as FrameworkData).languages?.join(', ') }
                         ></InformationCardDescription>
                     ) : (
                         <InformationCardDescription
                             head="Framework(s)"
-                            value={ props.languageData.frameworks?.join(', ') }
+                            value={ (props.languageData as LanguageData).frameworks?.join(', ') }
                         ></InformationCardDescription>
                     )
                 }

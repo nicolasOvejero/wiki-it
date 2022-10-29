@@ -4,7 +4,7 @@ import { selectThemeReducer } from '../../store/theme/theme.selector';
 import { THEME_ACTION_TYPES } from '../../store/theme/theme.types';
 import './theme-switch.style.scss';
 
-function ThemeSwitch() {
+const ThemeSwitch: React.FC = () => {
     const themeSate = useSelector(selectThemeReducer);
     const dispatch = useDispatch();
 

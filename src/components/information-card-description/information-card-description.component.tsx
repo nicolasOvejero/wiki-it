@@ -1,12 +1,12 @@
 import { Fragment } from 'react';
 import './information-card-description.style.scss';
 
-type cardProps = {
+type InformationCardProps = {
     head: string;
     value: string | undefined;
 }
 
-function InformationCardDescription(props: cardProps) {
+const InformationCardDescription: React.FC<InformationCardProps> = (props: InformationCardProps) => {
     return (
         <Fragment>
             <p className='description description-head'>

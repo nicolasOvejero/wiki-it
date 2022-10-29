@@ -8,7 +8,7 @@ body {
   background-color: $background-darker;
 
   &.light {
-     background-color: $tlight-background-darker;
+    background-color: $tlight-background-darker;
 
     .header-container {
       background-color: $tlight-background-darker;
@@ -37,9 +37,15 @@ body {
         color: $tlight-text-dark;
         border: 1px solid $tlight-color-3;
       }
+
+      &.green {
+        background-color: $tlight-color-4;
+        color: $tlight-white;
+        border: 1px solid $tlight-color-4;
+      }
     }
 
-    .language-card-container {
+    .card-container {
       background-color: $tlight-background-dark;
 
       .card-header .badge {
@@ -49,6 +55,14 @@ body {
 
         &.blue {
           background-color: $tlight-color-2;
+        }
+
+        &.green {
+          background-color: $tlight-color-4;
+
+          .name {
+            color: $tlight-white;
+          }
         }
 
         .name {
@@ -94,27 +108,29 @@ body {
       color: $tlight-text;
     }
 
-    @media only screen and (max-width: 576px) {
-      .menu {
-        background-color: $tlight-background-darker;
-        color: $tlight-text-light;
+    .menu {
+      background-color: $tlight-background-darker;
+      color: $tlight-text-light;
 
-        .name {
+      .name {
+        border-bottom: 1px solid $tlight-boder-color;
+      }
+
+      &-item {
+        &:not(:last-child) {
           border-bottom: 1px solid $tlight-boder-color;
         }
 
-        &-item {
-          &:not(:last-child) {
-            border-bottom: 1px solid $tlight-boder-color;
-          }
+        &.orange a {
+          color: $tlight-color-1;
+        }
 
-          &.orange a {
-            color: $tlight-color-1;
-          }
+        &.blue a {
+          color: $tlight-color-2;
+        }
 
-          &.blue a {
-            color: $tlight-color-2;
-          }
+        &.green a {
+          color: $tlight-color-4;
         }
       }
     }

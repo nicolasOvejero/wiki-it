@@ -1,6 +1,6 @@
-@import "../../common/common.scss";
+@import "./common.scss";
 
-.language-card-container {
+.card-container {
   background-color: $background-dark;
   border-radius: 1rem;
   display: flex;
@@ -28,6 +28,14 @@
           background-color: $color-2;
         }
 
+        &.green {
+          background-color: $color-4;
+
+          .name {
+            color: $text-dark;
+          }
+        }
+
         .name {
           color: $white;
           font-size: 2rem;
@@ -46,8 +54,8 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .language-card-container {
+@media only screen and (max-width: $breakpoint-large) {
+  .card-container {
     padding: 0.75rem;
 
     .card {
@@ -74,8 +82,8 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .language-card-container {
+@media only screen and (max-width: $breakpoint-medium) {
+  .card-container {
     .card {
       &-header {
         .card-minimal-info {
@@ -100,8 +108,8 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .language-card-container {
+@media only screen and (max-width: $breakpoint-small) {
+  .card-container {
     padding: 0.75rem;
 
     .card {

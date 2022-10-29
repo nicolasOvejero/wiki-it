@@ -6,11 +6,11 @@ import Home from './router/home/home.component';
 import Languages from './router/languages/languages.component';
 import { selectThemeReducer } from './store/theme/theme.selector';
 import './App.css';
+import Stacks from './router/stacks/stacks.component';
 
-function App() {
+const App: React.FC = () => {
     const themeSate = useSelector(selectThemeReducer);
     
-    console.log(themeSate.theme);
     if (themeSate.theme) {
         const body = document.getElementsByTagName('body')[0];
         body.classList.remove('dark', 'light');
@@ -23,6 +23,7 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path="languages" element={<Languages />} />
                 <Route path="frameworks" element={<Frameworks />} />
+                <Route path="stacks" element={<Stacks />} />
             </Route>
         </Routes>
     );

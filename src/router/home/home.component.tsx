@@ -14,8 +14,8 @@ type HomeState = {
     definitionsFiltered: DefinitionData[];
 }
 
-class Home extends Component {
-    constructor(props: any) {
+class Home extends Component<object, HomeState> {
+    constructor(props: object) {
         super(props);
 
         const definitions: DefinitionData[] = dataJson.definitions
@@ -26,14 +26,8 @@ class Home extends Component {
         };
     }
 
-    /*
-    * Function to handle the click on the filter buttton
-    * It takes the value put in the input filter and 
-    * with it, it filters the definition.
-    * At the end the state is update with the filtered values.
-    */
     searchFormHandler = (value: string) => {
-        const filteredValues = (this.state as HomeState).definitions
+        const filteredValues = this.state.definitions
             .filter((item) => item.name.toLowerCase().includes(value))
             .sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
 
@@ -54,7 +48,7 @@ class Home extends Component {
                 <h2 className='home-title'>Définition</h2>
                 <ul className='home-list'>
                     {
-                        (this.state as HomeState).definitionsFiltered.map((item) => 
+                        this.state.definitionsFiltered.map((item) => 
                         (
                             <li className='home-list-item' key={item.name}>
                                 <div className='home-list-head'>

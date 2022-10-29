@@ -13,7 +13,6 @@ export const themeReducer = (
     state = THEME_INITIAL_STATE,
     action = {} as AnyAction
 ): ThemeState => {
-    console.log(action, state);
     if (action.type === THEME_ACTION_TYPES.SET_THEME) {
         return {
             ...state,

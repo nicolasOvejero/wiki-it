@@ -730,6 +730,89 @@
             ]
         }
     ],
+    "stacks": [
+        {
+            "name": "MEAN",
+            "tools": [
+                "MongoDB",
+                "Express.js",
+                "Angular",
+                "Node.js"
+            ],
+            "type": "End-to-end JavaScript stack",
+            "advantage": [
+                "Réutilisation du code entre backend et front end",
+                "Toutes les langages/frameworks sont gratuits"
+            ]
+        },
+        {
+            "name": "MERN",
+            "tools": [
+                "MongoDB",
+                "Express.js",
+                "React",
+                "Node.js"
+            ],
+            "type": "End-to-end JavaScript stack",
+            "advantage": [
+                "Réutilisation du code entre backend et front end",
+                "Toutes les langages/frameworks sont gratuits"
+            ]
+        },
+        {
+            "name": "MEVN",
+            "tools": [
+                "MongoDB",
+                "Express.js",
+                "Vue.Js",
+                "Node.js"
+            ],
+            "type": "End-to-end JavaScript stack",
+            "advantage": [
+                "Réutilisation du code entre backend et front end",
+                "Toutes les langages/frameworks sont gratuits"
+            ]
+        },
+        {
+            "name": "LAMP",
+            "tools": [
+                "Linux",
+                "Apache",
+                "MySQL",
+                "PHP"
+            ],
+            "type": "Gestion éfficase des pages dynamiques",
+            "advantage": [
+                "Beaucoup de CMS utilisable sur LAMP (ex: WordPress or Drupal)"
+            ]
+        },
+        {
+            "name": "WAMP",
+            "tools": [
+                "Windows",
+                "Apache",
+                "MySQL",
+                "PHP"
+            ],
+            "type": "Gestion éfficase des pages dynamiques",
+            "advantage": [
+                "Beaucoup de CMS utilisable sur WAMP (ex: WordPress or Drupal)"
+            ]
+        },
+        {
+            "name": "MAMP",
+            "tools": [
+                "MacOs",
+                "Apache",
+                "MySQL",
+                "PHP"
+            ],
+            "type": "Gestion éfficase des pages dynamiques",
+            "advantage": [
+                "Beaucoup de CMS utilisable sur MAMP (ex: WordPress or Drupal)"
+            ]
+        }
+    ],
     "definitions": [
         {
             "name": "JSON",

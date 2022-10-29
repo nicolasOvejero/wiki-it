@@ -5,17 +5,17 @@
 
   &-image {
     background: {
-        image: url("../../assets/home-back.jpg");
-        repeat: no-repeat;
-        size: cover;
-        position: center;
+      image: url("../../assets/home-back.jpg");
+      repeat: no-repeat;
+      size: cover;
+      position: center;
     }
     height: 40vh;
     margin: {
-        bottom: 1rem;
-        left: -1rem;
-        right: -1rem;
-        top: -1rem;
+      bottom: 1rem;
+      left: -1rem;
+      right: -1rem;
+      top: -1rem;
     }
   }
 
@@ -63,7 +63,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: $breakpoint-large) {
   .home {
     &-title {
       font-size: 2.25rem;
@@ -89,10 +89,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $breakpoint-medium) {
   .home {
     &-image {
       height: 35vh;
@@ -120,7 +117,7 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: $breakpoint-small) {
   .home {
     &-image {
       height: 30vh;
@@ -134,19 +131,19 @@
       &-item {
         padding: 0.5rem 0;
       }
-  
+
       &-head {
         min-width: 0;
         font-size: 1.5rem;
       }
-  
+
       &-body {
         .extra {
           font-size: 0.75rem;
         }
       }
     }
-  
+
     form {
       margin: {
         bottom: 0.75rem;
@@ -155,7 +152,7 @@
       }
 
       button {
-        margin: 0
+        margin: 0;
       }
     }
   }

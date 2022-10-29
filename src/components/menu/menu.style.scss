@@ -17,7 +17,7 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: $breakpoint-small) {
   .menu {
     background-color: $background-darker;
     color: $text-light;
@@ -27,7 +27,7 @@
     padding: 1rem;
     position: absolute;
     top: 0;
-    width: 100vw;  
+    width: 100vw;
 
     &.open {
       left: 0;
@@ -40,10 +40,10 @@
       text-align: center;
     }
 
-    .close { 
+    .close {
       font-size: 2rem;
     }
-    
+
     &-items {
       list-style-type: none;
     }
@@ -60,11 +60,15 @@
         color: $color-1;
         padding: 1rem;
       }
-    
+
       &.blue a {
         color: $color-2;
         padding: 1rem;
       }
-   }
+      &.green a {
+        color: $color-4;
+        padding: 1rem;
+      }
+    }
   }
 }

@@ -8,7 +8,7 @@ type SearchFormProps = {
     buttontext?: string;
 }
 
-function SearchForm(props: SearchFormProps) {
+const SearchForm: React.FC<SearchFormProps> = (props: SearchFormProps) => {
     const submitHandler: FormEventHandler<HTMLFormElement> = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 

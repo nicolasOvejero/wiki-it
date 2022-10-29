@@ -6,8 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import reduxStore, { persistor } from './store/store'; 
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import './index.scss';
 import { PersistGate } from 'redux-persist/integration/react';
+import './index.scss';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

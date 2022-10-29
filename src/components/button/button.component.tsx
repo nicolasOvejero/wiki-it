@@ -8,10 +8,12 @@ type ButtonProps = {
     type?: "button" | "submit" | "reset" | undefined;
 }
 
-export type Colors = 'ORANGE' | 'BLUE' | 'YELLOW';
+export type Colors = 'ORANGE' | 'BLUE' | 'YELLOW' | 'GREEN';
 
-function Button(props: ButtonProps) {
-    const color = props.color === 'ORANGE' ? 'orange' : props.color === 'YELLOW' ? 'yellow' : 'blue';
+const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
+    const color = props.color === 'ORANGE' ? 'orange' :
+        props.color === 'YELLOW' ? 'yellow' :
+        props.color === 'GREEN' ? 'green' : 'blue';
 
     return (
         <button

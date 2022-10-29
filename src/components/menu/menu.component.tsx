@@ -5,7 +5,7 @@ import { MENU_ACTION_TYPES } from '../../store/menu/menu.types';
 import ThemeSwitch from '../theme-switch/theme-switch.component';
 import './menu.style.scss';
 
-function Menu() {
+const Menu: React.FC = () => {
     const menu = useSelector(selectMenuReducer);
     const dispatch = useDispatch();
 
@@ -28,6 +28,9 @@ function Menu() {
                 </li>
                 <li className='menu-item blue'>
                     <Link to="/frameworks" onClick={toggleMenu}>Frameworks</Link>
+                </li>
+                <li className='menu-item green'>
+                    <Link to="/stacks" onClick={toggleMenu}>Stacks</Link>
                 </li>
                 <li className='menu-item theme'>
                     <span>Theme :</span><ThemeSwitch />
