@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wiki-it/static/css/main.e693e66b.css",
-    "main.js": "/wiki-it/static/js/main.205b03ae.js",
+    "main.js": "/wiki-it/static/js/main.c5d95399.js",
     "static/js/496.ebfeae1a.chunk.js": "/wiki-it/static/js/496.ebfeae1a.chunk.js",
     "static/media/home-back.jpg": "/wiki-it/static/media/home-back.d83c207caefa3ad42f1d.jpg",
     "service-worker.js": "/wiki-it/service-worker.js",
@@ -9,11 +9,11 @@
     "static/media/sun.svg": "/wiki-it/static/media/sun.aab907de8b2b53dd8522.svg",
     "static/media/moon.svg": "/wiki-it/static/media/moon.6dd1b9a544c4fc3b7de6.svg",
     "main.e693e66b.css.map": "/wiki-it/static/css/main.e693e66b.css.map",
-    "main.205b03ae.js.map": "/wiki-it/static/js/main.205b03ae.js.map",
+    "main.c5d95399.js.map": "/wiki-it/static/js/main.c5d95399.js.map",
     "496.ebfeae1a.chunk.js.map": "/wiki-it/static/js/496.ebfeae1a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e693e66b.css",
-    "static/js/main.205b03ae.js"
+    "static/js/main.c5d95399.js"
   ]
 }
