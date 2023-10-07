@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import reduxStore, { persistor } from './store/store'; 
+import reduxStore, { persistor } from './store/store';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { PersistGate } from 'redux-persist/integration/react';
 import './index.scss';
@@ -16,7 +16,7 @@ root.render(
     <React.StrictMode>
         <Provider store={reduxStore} >
             <PersistGate persistor={persistor}>
-                <BrowserRouter basename={process.env.PUBLIC_URL}>
+                <BrowserRouter basename={import.meta.env.PUBLIC_URL}>
                     <App />
                 </BrowserRouter>
             </PersistGate>

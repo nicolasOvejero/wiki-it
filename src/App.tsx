@@ -5,12 +5,12 @@ import Frameworks from './router/frameworks/frameworks.component';
 import Home from './router/home/home.component';
 import Languages from './router/languages/languages.component';
 import { selectThemeReducer } from './store/theme/theme.selector';
-import './App.css';
 import Stacks from './router/stacks/stacks.component';
+import './App.css';
 
 const App: React.FC = () => {
     const themeSate = useSelector(selectThemeReducer);
-    
+
     if (themeSate.theme) {
         const body = document.getElementsByTagName('body')[0];
         body.classList.remove('dark', 'light');

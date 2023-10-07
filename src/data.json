@@ -2,11 +2,11 @@
     "languages": [
         {
             "name": "c",
-            "frameworks": [ 
+            "frameworks": [
                 "Vely"
             ],
             "usage": [
-                "Système embarqué",
+                "Système embarqué (IOT)",
                 "Programme"
             ],
             "devType": [
@@ -22,12 +22,12 @@
         },
         {
             "name": "c++",
-            "frameworks": [ 
+            "frameworks": [
                 "QT"
             ],
             "usage": [
                 "jeux vidéo",
-                "Système embarqué",
+                "Système embarqué (IOT)",
                 "Programme",
                 "Machine learning"
             ],
@@ -46,7 +46,7 @@
         },
         {
             "name": "c#",
-            "frameworks": [ 
+            "frameworks": [
                 "ASP.NET"
             ],
             "usage": [
@@ -67,20 +67,20 @@
         },
         {
             "name": "python",
-            "frameworks": [ 
-                "Flask", 
-                "Django", 
-                "CherryPy", 
-                "Dash", 
-                "Falcon", 
+            "frameworks": [
+                "Flask",
+                "Django",
+                "CherryPy",
+                "Dash",
+                "Falcon",
                 "Web2py"
             ],
             "usage": [
                 "IA",
                 "data analytics",
-                "applications", 
-                "data analytics", 
-                "site web"
+                "applications",
+                "site web",
+                "Système embarqué (IOT)"
             ],
             "devType": [
                 "frontend",
@@ -98,7 +98,7 @@
         },
         {
             "name": "javascript",
-            "frameworks": [ 
+            "frameworks": [
                 "AngularJS",
                 "Angular",
                 "ReactJs",
@@ -109,7 +109,8 @@
             ],
             "usage": [
                 "intéraction utilisateur",
-                "API"
+                "API",
+                "Système embarqué (IOT)"
             ],
             "devType": [
                 "frontend",
@@ -136,7 +137,8 @@
             "usage": [
                 "API",
                 "application",
-                "site web"
+                "site web",
+                "Système embarqué (IOT)"
             ],
             "devType": [
                 "frontend",
@@ -189,7 +191,8 @@
             "usage": [
                 "application web",
                 "scripting",
-                "serveur"
+                "serveur",
+                "Système embarqué (IOT)"
             ],
             "devType": [
                 "frontend",
@@ -215,10 +218,12 @@
                 "SwiftShell"
             ],
             "usage": [
-                "application mobile apple"
+                "application mobile apple",
+                "Système embarqué (IOT)"
             ],
             "devType": [
-                "frontend"
+                "frontend",
+                "backend"
             ],
             "advantage": [
                 "Open source",
@@ -469,6 +474,62 @@
             ],
             "disavantage": [
                 "Structuré"
+            ]
+        },
+        {
+            "name": "Lua",
+            "usage": [
+                "Système embarqué (IOT)"
+            ],
+            "devType": [
+                "backend"
+            ],
+            "advantage": [
+                "Execution en machine virtuelle",
+                "Léger",
+                "Portabilité"
+            ],
+            "disavantage": [
+                "Flexibilité",
+                "Syntaxe",
+                "Librairie(s)"
+            ]
+        },
+        {
+            "name": "Rust",
+            "usage": [
+                "Système embarqué (IOT)",
+                "Réseau",
+                "site web",
+                "Data science",
+                "jeux vidéo"
+            ],
+            "frameworks": [
+                "Tauri",
+                "Yew",
+                "Rocket",
+                "Actix Web",
+                "Juniper",
+                "Dioxus",
+                "Stdweb",
+                "Percy",
+                "Sycamore",
+                "Gloo",
+                "Seed"
+            ],
+            "devType": [
+                "backend",
+                "frontend"
+            ],
+            "advantage": [
+                "Performance",
+                "Fiabilité",
+                "Productivité",
+                "Sécurité"
+            ],
+            "disavantage": [
+                "apprentissage",
+                "ecosystème limité"
             ]
         }
     ],
@@ -833,30 +894,30 @@
             "extra": "Plus le score SEO d'un site est élevé, mieux le site sera référencé sur les moteurs de recherche"
         },
         {
-            "name": "CI/CD", 
+            "name": "CI/CD",
             "definitions": "(Continuous integration/Continuous distribution) Ensemble de concepts pour avoir une intégration et une distribution de code en continu",
             "extra": "L'ensemble est automatisé et sous la surveillance des DevOps"
         },
         {
-            "name": "SOAP", 
+            "name": "SOAP",
             "definitions": "(Simple Object Access Protocol) Format de d'échange données entre API et Frontend",
             "extra": "La structure resemble beacoup à celle du XML"
         },
         {
-            "name": "CMS", 
+            "name": "CMS",
             "definitions": "(Content Management System) Outils qui permet de concevoir un site web rapidement pour tout le monde",
             "extra": "Exemple : Joomla!, Wordpress"
         },
         {
-            "name": "UI", 
+            "name": "UI",
             "definitions": "(User Interface) Métier qui design et mets en page un site internet"
         },
         {
-            "name": "UX", 
+            "name": "UX",
             "definitions": "(User Experience) Métier qui travail l'experience utilisateur sur un site web"
         },
         {
-            "name": "AWS", 
+            "name": "AWS",
             "definitions": "(Amazon Web Services) Ensemble de solutions proposées par Amazon pour mettre en place un site web",
             "extra": "Exemple: Stockage de données (S3), Gestion de DNS (Route 53)"
         },

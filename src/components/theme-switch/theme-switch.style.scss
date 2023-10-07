@@ -24,7 +24,7 @@
     -webkit-transition: 0.4s;
 
     &:before {
-      background: $background-dark url("/assets/moon.svg");
+      background: $background-dark url("../../assets/moon.svg");
       background-repeat: no-repeat;
       background-position: center;
       bottom: 0;
@@ -55,7 +55,7 @@
       background-color: $tlight-background-dark;
 
       &:before {
-        background: $tlight-white url("/assets/sun.svg");
+        background: $tlight-white url("../../assets/sun.svg");
         background-repeat: no-repeat;
         background-position: center;
         box-shadow: 0 0px 4px 1px $tlight-boder-color;
